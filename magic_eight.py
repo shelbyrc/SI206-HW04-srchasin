@@ -22,5 +22,3 @@ while Trues:
     if question =="quit":
         break
     askquestion()
-
-testing
