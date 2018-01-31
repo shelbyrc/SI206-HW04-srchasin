@@ -1,8 +1,11 @@
 from random import randrange, choice
+
 def askquestion():
-    question= input("What is your question? ")
-    # if '?' not in question:
-    #     print("I'm sorry. I can only answer questions.")
+    if '?' not in question:
+        print("I'm sorry. I can only answer questions.")
+    else:
+        return(poss_answers())
+
 
 def poss_answers():
     poss_ans = [
@@ -13,5 +16,9 @@ def poss_answers():
     ]
     return print(choice(poss_ans))
 
-askquestion()
-poss_answers()
+question = ""
+while True:
+    question= input("What is your question? ")
+    if question =="quit":
+        break
+    askquestion()
