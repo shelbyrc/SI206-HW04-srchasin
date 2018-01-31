@@ -17,8 +17,10 @@ def poss_answers():
     return print(choice(poss_ans))
 
 question = ""
-while True:
+while Trues:
     question= input("What is your question? ")
     if question =="quit":
         break
     askquestion()
+
+testing
