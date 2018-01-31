@@ -17,7 +17,7 @@ def poss_answers():
     return print(choice(poss_ans))
 
 question = ""
-while Trues:
+while True:
     question= input("What is your question? ")
     if question =="quit":
         break
